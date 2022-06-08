@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  margin: 0;
+}
+
+.loader__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__gif {
+  width: 150px;
+}
+
+.loader__text {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(7, 70, 107);
+
+  background-image: url(https://fondosmil.com/fondo/13.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur (10px);
+  /* filter: blur(5px); */
+}
+
+.app__box {
+  width: min(350px, 85%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 20px;
+  background-color: rgba(164, 164, 208, 0.401);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.164);
+}
+
+.app__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  font-size: 24px;
+}
+
+.app__head-title,
+.app__head-location {
+  margin: 0;
+  padding: 0;
+}
+
+.app__content {
+  display: flex;
+  gap: 10px;
+}
+
+.app__weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.app__weather img {
+  width: 160px;
+}
+
+.app__weather-temp {
+  margin: 0;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.app__weather-btn {
+  border: none;
+  border-radius: 40%;
+  margin-bottom: 8px;
+  padding: 7px;
+  color: rgb(7, 70, 107);
+
+  cursor: pointer;
+}
+
+.app__otherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__otherInfo-description {
+  initial-letter: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.app__otherInfo-description::first-letter {
+  text-transform: uppercase;
+}
+
+.app__infoList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  padding: 15px;
+  gap: 8px;
+  margin: 0;
+}
